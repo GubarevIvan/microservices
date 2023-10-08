@@ -1,0 +1,9 @@
+package web.microservices.repositories;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import web.microservices.model.User;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+}
